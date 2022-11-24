@@ -248,15 +248,25 @@ footer {
   background: #f2f2f5
 }
 
+.hvr a{
+  text-decoration: none;
+  color: rgb(240, 180, 80);
+}
+
+.hvr a:hover{
+  cursor: pointer;
+  color: grey;
+}
+
 #lead {
   position: relative;
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: url(../images/lead-bg.jpg);
   background-size: cover;
   padding: 15px;
-  overflow: hidden
+  overflow: hidden;
+  cursor: default;
 }
 
 #lead-content {
@@ -274,7 +284,6 @@ footer {
 }
 
 #lead-content h1 {
-  color: #fff;
   font-weight: 900;
   font-size: 5em;
   text-transform: uppercase;
