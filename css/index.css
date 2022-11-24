@@ -1,0 +1,384 @@
+/*
+    ------------------------
+    ------- 1. font --------
+    ------------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+body{
+  font-family: "Crimson Text", sans-serif;
+  color: #fff; 
+}
+
+#font-22 {
+  font-size: 22px;
+  color: white;
+}
+#font-20 {
+  font-size: 20px;
+  color: white;
+}
+#font-18 {
+  font-size: 18px;
+  color: white;
+}
+#color-wt{
+  color: white;
+}
+#color-golden{
+  color: goldenrod;
+}
+
+/*
+  ------------------------
+  ------- 2. color -------
+  ------------------------
+*/
+.bg-color-grey1{
+  background-color: rgb(60, 60, 60);
+}
+.bg-color-grey2{
+  background-color: white;
+}
+.color-wt {
+  color: white;
+}
+.color-black {
+  color: black;
+}
+
+/*
+  ------------------------
+  ------- 3. Navbar -------
+  ------------------------
+*/
+
+#navbar {
+  position: fixed;
+  z-index: 100;
+  /* border: 1px solid gold; */
+}
+#menu {
+  background-color: black;
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 0px;
+}
+#menu>li>a {
+  color: white;
+  font-size: 1.8rem
+}
+#menu>li>a:hover {
+  color: black;
+}
+
+/*
+  ------------------------
+  ------- 4. about -------
+  ------------------------
+*/
+
+#about .heading {
+  color: #fff;
+}
+#profile-pic {
+  width: 300px;
+  border-radius: 50%;
+}
+#profile-desc {
+  padding: 50px 15px;
+  /* background: gray; */
+  text-align: center;
+}
+#profile-desc>h2 {
+  margin: 0 0 15px 0;
+  color: #fff !important;
+  font-weight: 500;
+}
+@media only screen and (max-width : 480px) {
+  #profile-pic {
+      width: 250px;
+  }
+}
+@media only screen and (max-width : 340px) {
+  #profile-pic {
+      width: 200px;
+  }
+}
+@media only screen and (max-width : 250px) {
+  #profile-pic {
+      width: 150px;
+  }
+}
+@media only screen and (max-width : 200px) {
+  #profile-pic {
+      width: 100px;
+  }
+}
+
+/*
+  ------------------------
+  ----- 5. Education -----
+  ------------------------
+*/
+#education .heading {
+  color: white;
+}
+
+/*
+  ------------------------
+  ------ 6. Project -------
+  ------------------------
+*/
+
+#projects .heading {
+  color: white;
+}
+.project-img {
+  width: 100%;
+  height: 300px;
+}
+.project-image {
+  width: 50%;
+}
+.project-info {
+  margin-left: 50%;
+  /* border: 1px solid red; */
+}
+#project-bg-color {
+  background-color: rgb(60, 60, 60);
+  color: white;
+  margin-bottom: 50px;
+}
+.tech-stack {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.tech-stack>img {
+  width: 35px;
+  margin: 10px;
+}
+#projects button {
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: rgb(60, 60, 60);
+  border-color: #fff;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  #project {
+      display: flex;
+      flex-direction: column;
+  }
+  .project-info{
+      margin-left: auto;
+  }
+  .tech-stack {
+      margin: auto;
+  }
+}
+
+
+/*
+  ------------------------
+  ------ 7. Skills -------
+  ------------------------
+*/
+#skills .heading {
+  color: white;
+}
+
+#backend>li, #frontend>li, #other>li {
+  background-color: rgb(60, 60, 60);
+}
+.skills-box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(60, 60, 60);
+  /* margin-bottom: 30px */
+}
+.skills-box>img {
+  width: 50%;
+}
+.skills-box>h3 {
+  color: white;
+}
+.tech-heading {
+  color: goldenrod;
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+/*
+  ------------------------
+  ------ 8. Go Top -------
+  ------------------------
+*/
+
+.row>.heading {
+  font-size: 50px;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+#to-top {
+  position: fixed;
+  bottom: 30px; right: 30px;
+}
+
+/*
+  ------------------------
+  ----- 9. Stats     -----
+  ------------------------
+*/
+
+/* my contribution starts */
+#stats, #cal{
+  background-color: rgb(60, 60, 60);
+}
+#statistic {
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  /* margin-top: 150px; */
+  padding-top: 50px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 10px;
+}
+
+#project_contribution {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, auto);
+  width: 90%;
+  margin: auto;
+  gap: 50px;
+  padding-top: 100px;
+  align-content: center;
+  padding-bottom: 200px;
+  letter-spacing: 1px;
+}
+.conthead {
+  text-align: center;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(74, 73, 73);
+  padding-top: 30px;
+  font-size: 20px;
+  padding-bottom: 20px;
+  transition: all 1s;
+}
+.conthead:hover {
+  transform: rotateY(360deg);
+}
+.conthead > h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.conthead > h2 > span {
+  color: white;
+  font-size: 40px;
+}
+.conthead > h2 + p {
+  font-weight: 500;
+}
+@media all and (min-width: 500px) and (max-width: 940px) {
+  #statistic {
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: 700;
+    letter-spacing: 7px;
+  }
+  #project_contribution {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+@media all and (min-width: 150px) and (max-width: 500px) {
+  #statistic {
+    font-size: 40px;
+    margin-top: 60px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    padding-top: 70px;
+  }
+  #project_contribution {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    padding-top: 50px;
+  }
+}
+
+/* git calender */
+#cal {
+  margin-top: -50px;
+  padding-bottom: 40px;
+}
+.code {
+  color:white;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+  /* padding-top: 50px; */
+  margin-top: -20px;
+}
+.calendar {
+  color: black;
+  background-color: white;
+  transition: all 0.5s;
+  width: 76%;
+}
+.calendar:hover {
+  background-color: black;
+  color: white;
+}
+@media all and (max-width: 320px) {
+  .code {
+      font-size: 30px;
+    }
+}
+
+/*
+  ------------------------
+  ----- 9. copyright -----
+  ------------------------
+*/
+#profile-links a{
+  text-decoration: none;
+  font-size: 25px;
+  padding:2px;
+}
+
+#profile-links a:hover{
+  font-weight: bold;
+  color: black;
+}
+
+#profile-links {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  gap: 60px;
+  color: blue;
+}
+
+#copyright1 {
+  font-size: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#contact {
+  width: 0;
+  height: 0;
+  padding: 0;
+}
