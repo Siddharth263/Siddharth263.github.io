@@ -41,7 +41,7 @@
 
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
-		id="ftco-navbar">
+		id="ftco-navbar nav-menu">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">Priyanshu<span>.</span></a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
@@ -51,19 +51,19 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#home-section" class="nav-link home"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link about"><span>About</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link skills"><span>Skills</span></a></li>
 					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a download href="resume\Priyanshu_Lal_Resume.pdf" class="nav-link"><span>Download
+					<li class="nav-item"><a href="#projects-section" class="nav-link projects"><span>Projects</span></a></li>
+					<li class="nav-item" id="resume-button-1"><a download href="resume\Priyanshu_Lal_Resume.pdf" class="nav-link resume"><span>Download
 								CV</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link contact"><span>Contact</span></a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero">
+	<section id="home-section home" class="hero">
 		<div class="home-slider owl-carousel">
 			<div class="slider-item">
 				<div class="overlay"></div>
@@ -78,10 +78,10 @@
 						<div class="one-forth d-flex  align-items-center ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<span class="subheading">Hello! This is Priyanshu</span>
+								<span class="subheading" id="user-detail-name">Hello! This is Priyanshu</span>
 								<h1 class="mb-4 mt-3">JAVA <span>Backend</span> Developer</h1>
 								<p><a href="#contact-section" class="btn btn-primary">Hire me</a> <a download
-										href="resume\Priyanshu_Lal_Resume.pdf" class="btn btn-primary btn-outline-primary">Download CV</a>
+										href="resume\Priyanshu_Lal_Resume.pdf" id="resume-button-2" class="btn btn-primary btn-outline-primary">Download CV</a>
 								</p>
 							</div>
 						</div>
@@ -104,7 +104,7 @@
 								<span class="subheading">I Design &amp; Develop Website</span>
 								<h1 class="mb-4 mt-3">Hi, I am <span>Priyanshu</span> This is my favorite work.</h1>
 								<p><a href="#contact-section" class="btn btn-primary">Hire me</a> <a download
-										href="resume\Priyanshu_Lal_Resume.pdf" class="btn btn-primary btn-outline-primary">Download CV</a>
+										href="resume\Priyanshu_Lal_Resume.pdf" id="resume-link-1" class="btn btn-primary btn-outline-primary">Download CV</a>
 								</p>
 							</div>
 						</div>
@@ -168,13 +168,13 @@
 		</div>
 	</section>
 
-	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb about section" id="about-section about">
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-lg-5 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
+						<div class="img d-flex align-self-stretch align-items-center home-img"
 							style="background-image:url(images/photo.jpeg);">
 						</div>
 					</div>
@@ -185,7 +185,7 @@
 							<div class="col-md-12 heading-section ftco-animate">
 								<span class="subheading">My Intro</span>
 								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-								<p>Originally from India, I have been honing my skills for the past year in Web Development, Backend
+								<p id="user-detail-intro">Originally from India, I have been honing my skills for the past year in Web Development, Backend
 									Development, Algorithms building and Data Structures.</p>
 
 								<ul class="about-info mt-4 px-md-0 px-2">
@@ -232,7 +232,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-section bg-light" id="skills-section">
+	<section class="ftco-section bg-light" id="skills-section skills">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
@@ -245,7 +245,7 @@
 			<div class="row progress-circle mb-5">
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Core JAVA</h2>
+						<h2 class="skills-card-img skills-card-name" class="h5 font-weight-bold text-center mb-4">Core JAVA</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='95'>
@@ -276,7 +276,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">HTML | CSS3 | JS</h2>
+						<h2 class="skills-card-img skills-card-name" class="h5 font-weight-bold text-center mb-4">HTML | CSS3 | JS</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='98'>
@@ -307,7 +307,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">DSA</h2>
+						<h2 class="skills-card-img skills-card-name" class="h5 font-weight-bold text-center mb-4">DSA</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='68'>
@@ -338,7 +338,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Hibernate</h2>
+						<h2 class="skills-card-img skills-card-name" class="h5 font-weight-bold text-center mb-4">Hibernate</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='92'>
@@ -369,7 +369,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Apache Maven</h2>
+						<h2 class="skills-card-img skills-card-name" class="h5 font-weight-bold text-center mb-4">Apache Maven</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='83'>
@@ -400,7 +400,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">MySQL</h2>
+						<h2 class="skills-card-img skills-card-name" class="h5 font-weight-bold text-center mb-4">MySQL</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='95'>
@@ -543,7 +543,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-section ftco-project" id="projects-section">
+	<section class="ftco-section ftco-project" id="projects-section projects">
 		<div class="container-fluid px-md-4">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
@@ -554,109 +554,109 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(/images/rd2.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://effortless-parfait-1c264b.netlify.app/" target="_blank">reliancedigital.in <span
+							<h3 class="project-title"><a class="project-deployed-link" href="https://effortless-parfait-1c264b.netlify.app/" target="_blank">reliancedigital.in <span
 										class="fa fa-globe" style="color: #ffff"></span> </a> <img style="size:192x192;"
 									src="http://https://cdn-icons-png.flaticon.com/512/6049/6049398.png" alt=""> </h3>
-							<span>HTML | CSS3 | JS</span> <br>
-							<a href="https://github.com/Siddharth263/relianceDigital" target="_blank"><span class="fa fa-github"
+							<span class="project-description project-tech-stack">HTML | CSS3 | JS</span> <br>
+							<a href="https://github.com/Siddharth263/relianceDigital" class="project-github-link" target="_blank"><span class="fa fa-github"
 									style="color: white;"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(/images/yt.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://verdant-torrone-b6665e.netlify.app/" target="_blank">youtube.com <span
+							<h3 class="project-title"><a class="project-deployed-link" href="https://verdant-torrone-b6665e.netlify.app/" target="_blank">youtube.com <span
 										class="fa fa-globe" style="color: #ffff"></span></a></h3>
-							<span>HTML | CSS3 | JS</span> <br>
-							<a href="https://github.com/Siddharth263/youtube-api" target="_blank"><span class="fa fa-github"
+							<span class="project-description project-tech-stack">HTML | CSS3 | JS</span> <br>
+							<a class="project-github-link" href="https://github.com/Siddharth263/youtube-api" target="_blank"><span class="fa fa-github"
 									style="color: white;"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(/images/bank.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://drive.google.com/file/d/1Vc3GPHeKGenCv6t2pTtVA8iRiacj4u1M/view"
+							<h3 class="project-title"><a class="project-deployed-link" href="https://drive.google.com/file/d/1Vc3GPHeKGenCv6t2pTtVA8iRiacj4u1M/view"
 									target="_blank">console based banking transaction system <span class="fa fa-globe"
 										style="color: #ffff"></span></a></h3>
-							<span>JAVA | Spring | MySQL</span><br>
-							<a href="https://github.com/Siddharth263/banking-system" target="_blank"><span class="fa fa-github"
+							<span class="project-description project-tech-stack">JAVA | Spring | MySQL</span><br>
+							<a class="project-github-link" href="https://github.com/Siddharth263/banking-system" target="_blank"><span class="fa fa-github"
 									style="color: white;"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(/images/bank.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://drive.google.com/file/d/1Vc3GPHeKGenCv6t2pTtVA8iRiacj4u1M/view"
+							<h3 class="project-title"><a class="project-deployed-link" href="https://drive.google.com/file/d/1Vc3GPHeKGenCv6t2pTtVA8iRiacj4u1M/view"
 									target="_blank">console based automated bidding system <span class="fa fa-globe"
 										style="color: #ffff"></span></a></h3>
-							<span>JAVA | Spring | MySQL</span> <br>
-							<a href="https://github.com/Siddharth263/saucy-reading-3785" target="_blank"><span class="fa fa-github"
+							<span class="project-description project-tech-stack">JAVA | Spring | MySQL</span> <br>
+							<a class="project-github-link" href="https://github.com/Siddharth263/saucy-reading-3785" target="_blank"><span class="fa fa-github"
 									style="color: white;"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(/images/sw.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://spontaneous-khapse-0741cf.netlify.app" target="_blank">star wars website <span
+							<h3 class="project-title"><a class="project-deployed-link" href="https://spontaneous-khapse-0741cf.netlify.app" target="_blank">star wars website <span
 										class="fa fa-globe" style="color: #ffff"></span></a></h3>
-							<span>HTML | CSS3 | JS</span> <br>
-							<a href="https://github.com/Siddharth263/star-wars" target="_blank"><span class="fa fa-github"
+							<span class="project-description project-tech-stack">HTML | CSS3 | JS</span> <br>
+							<a class="project-github-link" href="https://github.com/Siddharth263/star-wars" target="_blank"><span class="fa fa-github"
 									style="color: white;"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(images/work-6.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="">(in progress)fullstack student registration system <span class="fa fa-globe"
+							<h3 class="project-title"><a class="project-deployed-link" href="">(in progress)fullstack student registration system <span class="fa fa-globe"
 										style="color: #ffff"></span></a></h3>
-							<span>React | SpringBoot | Hibernate | Maven | REST Api</span> <br>
-							<a href="https://github.com/Siddharth263/student-registration-system" target="_blank"><span
+							<span class="project-description project-tech-stack">React | SpringBoot | Hibernate | Maven | REST Api</span> <br>
+							<a class="project-github-link" href="https://github.com/Siddharth263/student-registration-system" target="_blank"><span
 									class="fa fa-github" style="color: white;"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(/images/ssense.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://ssense-clones.netlify.app/" target="_blank">ssence.com <span class="fa fa-globe"
+							<h3 class="project-title"><a class="project-deployed-link" href="https://ssense-clones.netlify.app/" target="_blank">ssence.com <span class="fa fa-globe"
 										style="color: #ffff"></span></a></h3>
-							<span>HTML | CSS3 | JS</span> <br>
-							<a href="https://github.com/abhijitnr/SSENCE-Clone" target="_blank"><span class="fa fa-github"
+							<span class="project-description project-tech-stack">HTML | CSS3 | JS</span> <br>
+							<a class="project-github-link" href="https://github.com/abhijitnr/SSENCE-Clone" target="_blank"><span class="fa fa-github"
 									style="color: white;"></span></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 project-card">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(/images/buffer.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://poetic-selkie-2db329.netlify.app/" target="_blank">buffer.com <span
+							<h3 class="project-title"><a class="project-deployed-link" href="https://poetic-selkie-2db329.netlify.app/" target="_blank">buffer.com <span
 										class="fa fa-globe" style="color: #ffff"></span></a></h3>
-							<span>HTML | CSS3 | JS</span> <br>
-							<a href="https://github.com/Sandipmaury/lying-digestion-2812" target="_blank"><span class="fa fa-github"
+							<span class="project-description project-tech-stack">HTML | CSS3 | JS</span> <br>
+							<a class="project-github-link" href="https://github.com/Sandipmaury/lying-digestion-2812" target="_blank"><span class="fa fa-github"
 									style="color: white;"></span></a>
 						</div>
 					</div>
@@ -665,13 +665,13 @@
 		</div>
 	</section>
 
-	<div class="calendar"></div>
+	<div class="calendar react-activity-calendar"></div>
 
-	<div style="display: grid; justify-content: center; padding: 10px;">
+	<div github-stats-card style="display: grid; justify-content: center; padding: 10px;">
 		<img src="https://github-readme-stats.vercel.app/api?username=Siddharth263&show_icons=true&theme=merko" alt="">
 	</div>
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section contact">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-7 heading-section text-center ftco-animate">
@@ -731,7 +731,7 @@
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="fa fa-phone"></span>
 							</div>
-							<div class="text">
+							<div class="text" id="contact-phone">
 								<p><span>Phone:</span> <a href="tel://+91-8181813649"> +91-8181813649</a></p>
 							</div>
 						</div>
@@ -739,7 +739,7 @@
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="fa fa-paper-plane"></span>
 							</div>
-							<div class="text">
+							<div class="text" id="contact-email">
 								<p><span>Email:</span> <a href="mailto:priyanshulal2213@gmail.com">priyanshulal2213@gmail.com</a></p>
 							</div>
 						</div>
@@ -778,20 +778,10 @@
 							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
 							<li><a href="#projects-section"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
 							<li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+							<li><a download href="resume\Priyanshu_Lal_Resume.pdf" id="resume-link-2"><span class="fa fa-chevron-right mr-2"></span>Download CV</a></li>
 						</ul>
 					</div>
 				</div>
-				<!-- <div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Services</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>DB Management</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>API Deployment</a></li>
-						</ul>
-					</div>
-				</div> -->
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
@@ -806,9 +796,9 @@
 						<ul class="ftco-footer-social list-unstyled mt-2">
 							<li class="ftco-animate"><a href="https://twitter.com/Pcool1217" target="_blank"><span
 										class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.linkedin.com/in/priyanshu-2387261b8/" target="_blank"><span
+							<li class="ftco-animate" id="contact-linkedin"><a href="https://www.linkedin.com/in/priyanshu-2387261b8/" target="_blank"><span
 										class="fa fa-linkedin"></span></a></li>
-							<li class="ftco-animate"><a href="https://github.com/Siddharth263" target="_blank"><span
+							<li class="ftco-animate" id="contact-github"><a href="https://github.com/Siddharth263" target="_blank"><span
 										class="fa fa-github"></span></a></li>
 						</ul>
 					</div>
